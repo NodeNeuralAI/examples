@@ -1,0 +1,14 @@
+{
+  "name": "node-neural-examples",
+  "private": true,
+  "description": "Full source code for the Node & Neural videos",
+  "workspaces": ["v1-ai-middleware", "v2-rag-pgvector", "v4-semantic-cache"],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

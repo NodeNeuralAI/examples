@@ -1,0 +1,19 @@
+{
+  "name": "v2-rag-pgvector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "migrate": "tsx --env-file=.env src/migrate.ts",
+    "relay": "tsx --env-file=.env src/outbox-relay.ts",
+    "worker": "tsx --env-file=.env src/embedding.worker.ts",
+    "ask": "tsx --env-file=.env src/ask.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "bullmq": "^5.65.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6"
+  }
+}

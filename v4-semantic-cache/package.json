@@ -1,0 +1,18 @@
+{
+  "name": "v4-semantic-cache",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "create-index": "tsx --env-file=.env src/create-index.ts",
+    "build": "esbuild src/handler.ts --bundle --platform=node --target=node22 --format=esm --outfile=dist/handler.mjs --external:@valkey/valkey-glide",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1161.0",
+    "@valkey/valkey-glide": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.152",
+    "esbuild": "^0.25.0"
+  }
+}
