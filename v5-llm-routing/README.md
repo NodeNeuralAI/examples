@@ -1,6 +1,6 @@
 # V5: LLM routing with a validation cascade
 
-Video: [LLM Routing: Stop Paying Premium Prices for Simple Prompts](https://www.youtube.com/@NodeNeuralAI)
+Video: [LLM Routing: Stop Paying Premium Prices for Simple Prompts](https://www.youtube.com/watch?v=7kZ9mOlxuZo)
 
 Each request goes to the cheapest model tier that is allowed to handle it. Every answer is validated, and a failure moves the request one tier up. Risky requests (legal, payment, medical) skip the cheap tiers no matter how short they are.
 
