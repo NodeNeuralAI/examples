@@ -1,0 +1,16 @@
+{
+  "name": "v5-llm-routing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "tsx --env-file=.env src/demo.ts",
+    "report": "tsx --env-file=.env src/report.ts",
+    "shadow": "tsx --env-file=.env src/shadow.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1161.0",
+    "zod": "^4.1.0"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "node-neural-examples",
   "private": true,
   "description": "Full source code for the Node & Neural videos",
-  "workspaces": ["v1-ai-middleware", "v2-rag-pgvector", "v4-semantic-cache"],
+  "workspaces": ["v1-ai-middleware", "v2-rag-pgvector", "v4-semantic-cache", "v5-llm-routing"],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces"
   },
